@@ -132,14 +132,14 @@ close all
 
 %%
 figure(7)
-gamma_est=out.gamma_est.signals(1).values;
-mode_vector=out.gamma_est.signals(2).values;
-%voltage_out=out.voltage(:,1);
-%current_out=out.current(:,2);
-cum_energy=out.cum_energy;
-plot(gamma_est(mode_vector==-1))
-%hold on
-%plot(gamma_est(mode_vector==-1)-highpass(gamma_est(mode_vector==-1),0.0005,5))
-plot(movmean(gamma_est(mode_vector==-1),1e5))
-%plot(cum_energy(mode_vector==-1)/1e3/3600,Cr./movmean(gamma_est(mode_vector==-1),2e5))
-hold off
+% gamma_est=out.gamma_est.signals(1).values;
+% mode_vector=out.gamma_est.signals(2).values;
+% %voltage_out=out.voltage(:,1);
+% %current_out=out.current(:,2);
+% cum_energy=out.cum_energy;
+% plot(gamma_est(mode_vector==-1))
+% %hold on
+% %plot(gamma_est(mode_vector==-1)-highpass(gamma_est(mode_vector==-1),0.0005,5))
+% plot(movmean(gamma_est(mode_vector==-1),1e5))
+% %plot(cum_energy(mode_vector==-1)/1e3/3600,Cr./movmean(gamma_est(mode_vector==-1),2e5))
+% hold off
